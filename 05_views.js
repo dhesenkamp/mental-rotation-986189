@@ -92,7 +92,7 @@ const thanks = magpieViews.view_generator("thanks", {
 
 const practice = magpieViews.view_generator("key_press", {
   trials: practice_trials.key_press.length,
-  data: practice_trials.key_press,
+  data: _.shuffle(practice_trials.key_press),
   name: "practice",
   pause: 250,
   // response feedback doesn't work?
