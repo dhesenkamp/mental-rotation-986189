@@ -91,8 +91,7 @@ const thanks = magpieViews.view_generator("thanks", {
 // Trial views
 
 const practice = magpieViews.view_generator("key_press", {
-  //trials: practice_trials.key_press.length,
-  trials: 2,
+  trials: practice_trials.key_press.length,
   data: practice_trials.key_press,
   name: "practice",
   pause: 250,
@@ -103,8 +102,7 @@ const practice = magpieViews.view_generator("key_press", {
 });
 
 const main = magpieViews.view_generator("key_press", {
-  //trials: main_trials.key_press.length,
-  trials: 8,
+  trials: main_trials.key_press.length,
   data: _.shuffle(main_trials.key_press),
   name: "main",
   pause: 250,

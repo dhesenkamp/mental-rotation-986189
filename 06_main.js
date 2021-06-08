@@ -20,7 +20,6 @@ $("document").ready(function() {
             practice,
             intermediate_wrapping,
             main,
-
             post_test,
             thanks,
         ],
@@ -31,7 +30,7 @@ $("document").ready(function() {
             // Possible deployment methods are:
             // "debug" and "directLink"
             // As well as "MTurk", "MTurkSandbox" and "Prolific"
-            deployMethod: "debug",
+            deployMethod: "directLink",
             contact_email: "dhesenkamp@uos.de",
             prolificURL: "https://app.prolific.ac/submissions/complete?cc=SAMPLE1234"
         },
