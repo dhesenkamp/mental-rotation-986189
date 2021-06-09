@@ -34,9 +34,8 @@ const instructions = magpieViews.view_generator("instructions", {
           <br\>
           <br\>
           Please answer as accurately and quickly as possible. In order to get you set, the experiment will start 
-          with some test trials. Take your time and get familiar with the procedure, during the test trials 
-          you will also directly receive feedback for your answers. You will receive a message once the actual trials 
-          begin!`,
+          with some test trials. Take your time and get familiar with the procedure. You will receive a message 
+          once the actual trials begin!`,
   buttonText: 'Start test trials'
 });
 
@@ -44,9 +43,8 @@ const intermediate_wrapping = magpieViews.view_generator("instructions", {
   trials: 1,
   name: "intermediate_wrapping",
   title: "Now the real thing",
-  text: `Great, you are done with the practice trials! The actual experimental trials are next, so 
-          make sure that you are all set and ready. Nothing changes for you, except that you won't get 
-          feedback anymore for your answers now. Here's the key assignment again:
+  text: `Great, you are done with the practice! The actual experimental trials are next, so 
+          make sure that you are all set and ready. Nothing changes for you. Here's the key assignment again:
           <br/>
           <br/>
           <b>f: same object</b>
@@ -62,7 +60,7 @@ const post_test = magpieViews.view_generator("post_test", {
   trials: 1,
   name: 'post_test',
   title: 'Additional information',
-  text: 'Answering the following questions is optional, but your answers will help us analyze our results.'
+  text: 'Thank you for your time so far. Answering the following questions is optional, but your answers will help us analyze our results.'
 
   // You can change much of what appears here, e.g., to present it in a different language, as follows:
   // buttonText: 'Weiter',
@@ -85,7 +83,7 @@ const thanks = magpieViews.view_generator("thanks", {
   trials: 1,
   name: 'thanks',
   title: 'Thank you for taking part in this experiment!',
-  prolificConfirmText: 'Press the button'
+  prolificConfirmText: 'Finish'
 });
 
 // Trial views
@@ -95,10 +93,10 @@ const practice = magpieViews.view_generator("key_press", {
   data: _.shuffle(practice_trials.key_press),
   name: "practice",
   pause: 250,
-  // response feedback doesn't work?
-  hook: {
+  // The built-in template for response feedback doesn't work
+  /* hook: {
     after_response_enabled: check_response
-  }
+  } */
 });
 
 const main = magpieViews.view_generator("key_press", {
@@ -106,8 +104,8 @@ const main = magpieViews.view_generator("key_press", {
   data: _.shuffle(main_trials.key_press),
   name: "main",
   pause: 250,
-  // time limit doesn't work?
-  hook: {
+  // The built-in template for time limit doesn't work
+  /* hook: {
     after_stim_shown: time_limit
-  }
+  } */
 })

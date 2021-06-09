@@ -316,6 +316,10 @@ const main_trials = {
             item: 8,
             expected: "same",
             angle: 150,
+            key1: "f",
+            key2: "j",
+            f: "same",
+            j: "different"
         },
         {
             picture: "images/main/8_150_different.jpg",
