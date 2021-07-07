@@ -1,4 +1,4 @@
-Modified version for XPLab 2021 (986189)
+Modified version for XPLab 2021
 
 # Mental Rotation Task
 
@@ -19,7 +19,7 @@ This experiment was built using [\_magpie](https://magpie-ea.github.io/magpie-si
 
 ## Running the experiment
 
-1. Online Link: [here](https://mental-rotation-986189.netlify.app)
+1. Online Link: [here](https://mental-rotation-xplab21.netlify.app)
 	- Deployment status: [![Netlify Status](https://api.netlify.com/api/v1/badges/5e3260b6-63af-4343-bf0a-b0784ebcb969/deploy-status)](https://app.netlify.com/sites/mental-rotation-986189/deploys)
 
 2. Offline: Clone the repository, run `npm install` and open `index.html`.
